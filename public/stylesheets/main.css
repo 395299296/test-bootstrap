@@ -1,0 +1,21 @@
+body {
+    font-family:Microsoft YaHei,helvetica,arial;
+	font-size:13px;
+	color:#5a5a5a;
+	background:#f5f5fa
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 0px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+.top {
+    height:52px;
+    background:#292827
+}
