@@ -1,0 +1,154 @@
+13 五月 2017 09:58:50,713 INFO  ~ Starting D:\eclipse\workspace\test-bootstrap
+13 五月 2017 09:58:51,668 WARN  ~ You're running Play! in DEV mode
+13 五月 2017 09:58:51,796 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+13 五月 2017 09:59:20,754 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+13 五月 2017 09:59:21,800 INFO  ~ Application 'test-bootstrap' is now started !
+13 五月 2017 09:59:21,962 INFO  ~ Dataset: data/u.data
+13 五月 2017 09:59:21,996 INFO  ~ All dataset files [data\u.data]
+13 五月 2017 09:59:21,997 INFO  ~ All dataset files size 2076409
+13 五月 2017 09:59:21,997 INFO  ~ Now loading dataset file u
+13 五月 2017 09:59:23,825 INFO  ~ Transform data to Convertor successfully!
+13 五月 2017 09:59:24,135 INFO  ~ Split data to train Set and test Set successfully!
+13 五月 2017 09:59:24,137 INFO  ~ Data size of training is 71295
+13 五月 2017 09:59:24,137 INFO  ~ Data size of testing is 17796
+13 五月 2017 09:59:24,138 INFO  ~ build item recommender
+13 五月 2017 09:59:27,135 INFO  ~ Job Setup completed.
+13 五月 2017 09:59:27,145 INFO  ~ Job Train completed.
+13 五月 2017 09:59:29,512 INFO  ~ Job End.
+13 五月 2017 09:59:29,512 INFO  ~ Build recommender costs 2391 milliseconds
+13 五月 2017 09:59:29,554 INFO  ~ RMSE:0.9290947205256368
+13 五月 2017 09:59:29,554 INFO  ~ build user recommender
+13 五月 2017 09:59:31,748 INFO  ~ Job Setup completed.
+13 五月 2017 09:59:31,749 INFO  ~ Job Train completed.
+13 五月 2017 09:59:34,013 INFO  ~ Job End.
+13 五月 2017 09:59:34,013 INFO  ~ Build recommender costs 2268 milliseconds
+13 五月 2017 09:59:34,015 INFO  ~ RMSE:0.9424360794899025
+13 五月 2017 09:59:34,015 INFO  ~ build rating recommender
+13 五月 2017 09:59:36,540 INFO  ~ Job Setup completed.
+13 五月 2017 09:59:36,576 INFO  ~ PMFRecommender iter 1: loss = 367051.89838091226, delta_loss = -367051.9
+13 五月 2017 09:59:36,610 INFO  ~ PMFRecommender iter 2: loss = 95803.58034253304, delta_loss = 271248.3
+13 五月 2017 09:59:36,615 INFO  ~ PMFRecommender iter 3: loss = 44214.318756037705, delta_loss = 51589.26
+13 五月 2017 09:59:36,622 INFO  ~ PMFRecommender iter 4: loss = 37738.02207752825, delta_loss = 6476.297
+13 五月 2017 09:59:36,630 INFO  ~ PMFRecommender iter 5: loss = 35425.354880276136, delta_loss = 2312.6672
+13 五月 2017 09:59:36,638 INFO  ~ PMFRecommender iter 6: loss = 34142.1808366585, delta_loss = 1283.1741
+13 五月 2017 09:59:36,647 INFO  ~ PMFRecommender iter 7: loss = 33185.967786393005, delta_loss = 956.2131
+13 五月 2017 09:59:36,652 INFO  ~ PMFRecommender iter 8: loss = 32335.70949795305, delta_loss = 850.2583
+13 五月 2017 09:59:36,660 INFO  ~ PMFRecommender iter 9: loss = 31529.553712270073, delta_loss = 806.15576
+13 五月 2017 09:59:36,667 INFO  ~ PMFRecommender iter 10: loss = 30764.59835138985, delta_loss = 764.9554
+13 五月 2017 09:59:36,675 INFO  ~ PMFRecommender iter 11: loss = 30048.240022811013, delta_loss = 716.35834
+13 五月 2017 09:59:36,683 INFO  ~ PMFRecommender iter 12: loss = 29382.19361258997, delta_loss = 666.0464
+13 五月 2017 09:59:36,691 INFO  ~ PMFRecommender iter 13: loss = 28765.44071314149, delta_loss = 616.7529
+13 五月 2017 09:59:36,699 INFO  ~ PMFRecommender iter 14: loss = 28197.66265575325, delta_loss = 567.7781
+13 五月 2017 09:59:36,708 INFO  ~ PMFRecommender iter 15: loss = 27678.672525446065, delta_loss = 518.9901
+13 五月 2017 09:59:36,717 INFO  ~ PMFRecommender iter 16: loss = 27207.132315638228, delta_loss = 471.54022
+13 五月 2017 09:59:36,725 INFO  ~ PMFRecommender iter 17: loss = 26780.308062992714, delta_loss = 426.82425
+13 五月 2017 09:59:36,733 INFO  ~ PMFRecommender iter 18: loss = 26394.534582863325, delta_loss = 385.77347
+13 五月 2017 09:59:36,742 INFO  ~ PMFRecommender iter 19: loss = 26045.76135892985, delta_loss = 348.77322
+13 五月 2017 09:59:36,752 INFO  ~ PMFRecommender iter 20: loss = 25729.93105081989, delta_loss = 315.83032
+13 五月 2017 09:59:36,760 INFO  ~ PMFRecommender iter 21: loss = 25443.199129618577, delta_loss = 286.73193
+13 五月 2017 09:59:36,768 INFO  ~ PMFRecommender iter 22: loss = 25182.052404250597, delta_loss = 261.14673
+13 五月 2017 09:59:36,777 INFO  ~ PMFRecommender iter 23: loss = 24943.36288686495, delta_loss = 238.68951
+13 五月 2017 09:59:36,784 INFO  ~ PMFRecommender iter 24: loss = 24724.397081381223, delta_loss = 218.9658
+13 五月 2017 09:59:36,793 INFO  ~ PMFRecommender iter 25: loss = 24522.795945125577, delta_loss = 201.60114
+13 五月 2017 09:59:36,800 INFO  ~ PMFRecommender iter 26: loss = 24336.538568056323, delta_loss = 186.25737
+13 五月 2017 09:59:36,810 INFO  ~ PMFRecommender iter 27: loss = 24163.899460898865, delta_loss = 172.63911
+13 五月 2017 09:59:36,816 INFO  ~ PMFRecommender iter 28: loss = 24003.405791833557, delta_loss = 160.49367
+13 五月 2017 09:59:36,824 INFO  ~ PMFRecommender iter 29: loss = 23853.797979365252, delta_loss = 149.60782
+13 五月 2017 09:59:36,832 INFO  ~ PMFRecommender iter 30: loss = 23713.995076632982, delta_loss = 139.8029
+13 五月 2017 09:59:36,841 INFO  ~ PMFRecommender iter 31: loss = 23583.065234108144, delta_loss = 130.92984
+13 五月 2017 09:59:36,849 INFO  ~ PMFRecommender iter 32: loss = 23460.20093916268, delta_loss = 122.864296
+13 五月 2017 09:59:36,855 INFO  ~ PMFRecommender iter 33: loss = 23344.698478111302, delta_loss = 115.502464
+13 五月 2017 09:59:36,861 INFO  ~ PMFRecommender iter 34: loss = 23235.940998798174, delta_loss = 108.75748
+13 五月 2017 09:59:36,872 INFO  ~ PMFRecommender iter 35: loss = 23133.384578602472, delta_loss = 102.55642
+13 五月 2017 09:59:36,880 INFO  ~ PMFRecommender iter 36: loss = 23036.546771410587, delta_loss = 96.83781
+13 五月 2017 09:59:36,885 INFO  ~ PMFRecommender iter 37: loss = 22944.997187978555, delta_loss = 91.54958
+13 五月 2017 09:59:36,892 INFO  ~ PMFRecommender iter 38: loss = 22858.349741950544, delta_loss = 86.647446
+13 五月 2017 09:59:36,900 INFO  ~ PMFRecommender iter 39: loss = 22776.256261306284, delta_loss = 82.09348
+13 五月 2017 09:59:36,913 INFO  ~ PMFRecommender iter 40: loss = 22698.40122066335, delta_loss = 77.85504
+13 五月 2017 09:59:36,923 INFO  ~ PMFRecommender iter 41: loss = 22624.49739402523, delta_loss = 73.903824
+13 五月 2017 09:59:36,931 INFO  ~ PMFRecommender iter 42: loss = 22554.28226251925, delta_loss = 70.21513
+13 五月 2017 09:59:36,941 INFO  ~ PMFRecommender iter 43: loss = 22487.51503957921, delta_loss = 66.76722
+13 五月 2017 09:59:36,950 INFO  ~ PMFRecommender iter 44: loss = 22423.97419862284, delta_loss = 63.54084
+13 五月 2017 09:59:36,960 INFO  ~ PMFRecommender iter 45: loss = 22363.45540740728, delta_loss = 60.51879
+13 五月 2017 09:59:36,968 INFO  ~ PMFRecommender iter 46: loss = 22305.769789499816, delta_loss = 57.68562
+13 五月 2017 09:59:36,975 INFO  ~ PMFRecommender iter 47: loss = 22250.742447514447, delta_loss = 55.027344
+13 五月 2017 09:59:36,982 INFO  ~ PMFRecommender iter 48: loss = 22198.211195136006, delta_loss = 52.531254
+13 五月 2017 09:59:36,991 INFO  ~ PMFRecommender iter 49: loss = 22148.025455657043, delta_loss = 50.185738
+13 五月 2017 09:59:36,996 INFO  ~ PMFRecommender iter 50: loss = 22100.045293815725, delta_loss = 47.980164
+13 五月 2017 09:59:37,001 INFO  ~ PMFRecommender iter 51: loss = 22054.140555306876, delta_loss = 45.90474
+13 五月 2017 09:59:37,007 INFO  ~ PMFRecommender iter 52: loss = 22010.19009450097, delta_loss = 43.950462
+13 五月 2017 09:59:37,015 INFO  ~ PMFRecommender iter 53: loss = 21968.081075710677, delta_loss = 42.10902
+13 五月 2017 09:59:37,025 INFO  ~ PMFRecommender iter 54: loss = 21927.70833709061, delta_loss = 40.372738
+13 五月 2017 09:59:37,034 INFO  ~ PMFRecommender iter 55: loss = 21888.973809036328, delta_loss = 38.734528
+13 五月 2017 09:59:37,043 INFO  ~ PMFRecommender iter 56: loss = 21851.78598085428, delta_loss = 37.187828
+13 五月 2017 09:59:37,050 INFO  ~ PMFRecommender iter 57: loss = 21816.059410967555, delta_loss = 35.72657
+13 五月 2017 09:59:37,056 INFO  ~ PMFRecommender iter 58: loss = 21781.714276732095, delta_loss = 34.345135
+13 五月 2017 09:59:37,062 INFO  ~ PMFRecommender iter 59: loss = 21748.675960600354, delta_loss = 33.038315
+13 五月 2017 09:59:37,071 INFO  ~ PMFRecommender iter 60: loss = 21716.874669761266, delta_loss = 31.80129
+13 五月 2017 09:59:37,077 INFO  ~ PMFRecommender iter 61: loss = 21686.245086565425, delta_loss = 30.629583
+13 五月 2017 09:59:37,087 INFO  ~ PMFRecommender iter 62: loss = 21656.726047277923, delta_loss = 29.51904
+13 五月 2017 09:59:37,096 INFO  ~ PMFRecommender iter 63: loss = 21628.260246809423, delta_loss = 28.465801
+13 五月 2017 09:59:37,104 INFO  ~ PMFRecommender iter 64: loss = 21600.79396717355, delta_loss = 27.46628
+13 五月 2017 09:59:37,112 INFO  ~ PMFRecommender iter 65: loss = 21574.27682758795, delta_loss = 26.51714
+13 五月 2017 09:59:37,120 INFO  ~ PMFRecommender iter 66: loss = 21548.661554245526, delta_loss = 25.615273
+13 五月 2017 09:59:37,129 INFO  ~ PMFRecommender iter 67: loss = 21523.903767930784, delta_loss = 24.757786
+13 五月 2017 09:59:37,137 INFO  ~ PMFRecommender iter 68: loss = 21499.96178780679, delta_loss = 23.94198
+13 五月 2017 09:59:37,145 INFO  ~ PMFRecommender iter 69: loss = 21476.796449890095, delta_loss = 23.165339
+13 五月 2017 09:59:37,153 INFO  ~ PMFRecommender iter 70: loss = 21454.370938820673, delta_loss = 22.42551
+13 五月 2017 09:59:37,160 INFO  ~ PMFRecommender iter 71: loss = 21432.650631754634, delta_loss = 21.720306
+13 五月 2017 09:59:37,165 INFO  ~ PMFRecommender iter 72: loss = 21411.60295328473, delta_loss = 21.047678
+13 五月 2017 09:59:37,171 INFO  ~ PMFRecommender iter 73: loss = 21391.19724047488, delta_loss = 20.405712
+13 五月 2017 09:59:37,179 INFO  ~ PMFRecommender iter 74: loss = 21371.404617151962, delta_loss = 19.792624
+13 五月 2017 09:59:37,188 INFO  ~ PMFRecommender iter 75: loss = 21352.19787674508, delta_loss = 19.206741
+13 五月 2017 09:59:37,194 INFO  ~ PMFRecommender iter 76: loss = 21333.551373025202, delta_loss = 18.646503
+13 五月 2017 09:59:37,199 INFO  ~ PMFRecommender iter 77: loss = 21315.44091816615, delta_loss = 18.110455
+13 五月 2017 09:59:37,204 INFO  ~ PMFRecommender iter 78: loss = 21297.84368762049, delta_loss = 17.59723
+13 五月 2017 09:59:37,210 INFO  ~ PMFRecommender iter 79: loss = 21280.73813134844, delta_loss = 17.105556
+13 五月 2017 09:59:37,215 INFO  ~ PMFRecommender iter 80: loss = 21264.103890973158, delta_loss = 16.634241
+13 五月 2017 09:59:37,221 INFO  ~ PMFRecommender iter 81: loss = 21247.92172250124, delta_loss = 16.182169
+13 五月 2017 09:59:37,227 INFO  ~ PMFRecommender iter 82: loss = 21232.17342422017, delta_loss = 15.748299
+13 五月 2017 09:59:37,232 INFO  ~ PMFRecommender iter 83: loss = 21216.84176946768, delta_loss = 15.331655
+13 五月 2017 09:59:37,239 INFO  ~ PMFRecommender iter 84: loss = 21201.91044395966, delta_loss = 14.931326
+13 五月 2017 09:59:37,246 INFO  ~ PMFRecommender iter 85: loss = 21187.36398737698, delta_loss = 14.546456
+13 五月 2017 09:59:37,254 INFO  ~ PMFRecommender iter 86: loss = 21173.18773895095, delta_loss = 14.176249
+13 五月 2017 09:59:37,262 INFO  ~ PMFRecommender iter 87: loss = 21159.367786778676, delta_loss = 13.819952
+13 五月 2017 09:59:37,271 INFO  ~ PMFRecommender iter 88: loss = 21145.890920637656, delta_loss = 13.476866
+13 五月 2017 09:59:37,278 INFO  ~ PMFRecommender iter 89: loss = 21132.74458805162, delta_loss = 13.146333
+13 五月 2017 09:59:37,285 INFO  ~ PMFRecommender iter 90: loss = 21119.916853411374, delta_loss = 12.827735
+13 五月 2017 09:59:37,296 INFO  ~ PMFRecommender iter 91: loss = 21107.39635992494, delta_loss = 12.5204935
+13 五月 2017 09:59:37,301 INFO  ~ PMFRecommender iter 92: loss = 21095.172294222102, delta_loss = 12.224066
+13 五月 2017 09:59:37,308 INFO  ~ PMFRecommender iter 93: loss = 21083.234353417094, delta_loss = 11.937941
+13 五月 2017 09:59:37,317 INFO  ~ PMFRecommender iter 94: loss = 21071.572714459722, delta_loss = 11.661639
+13 五月 2017 09:59:37,324 INFO  ~ PMFRecommender iter 95: loss = 21060.178005634218, delta_loss = 11.394709
+13 五月 2017 09:59:37,331 INFO  ~ PMFRecommender iter 96: loss = 21049.04128001921, delta_loss = 11.136725
+13 五月 2017 09:59:37,338 INFO  ~ PMFRecommender iter 97: loss = 21038.153990798615, delta_loss = 10.887289
+13 五月 2017 09:59:37,348 INFO  ~ PMFRecommender iter 98: loss = 21027.507968279926, delta_loss = 10.646023
+13 五月 2017 09:59:37,358 INFO  ~ PMFRecommender iter 99: loss = 21017.095398491372, delta_loss = 10.41257
+13 五月 2017 09:59:37,366 INFO  ~ PMFRecommender iter 100: loss = 21006.90880324804, delta_loss = 10.186595
+13 五月 2017 09:59:37,366 INFO  ~ Job Train completed.
+13 五月 2017 09:59:37,367 INFO  ~ Job End.
+13 五月 2017 09:59:37,367 INFO  ~ Build recommender costs 858 milliseconds
+13 五月 2017 09:59:37,368 INFO  ~ RMSE:1.002732688399043
+13 五月 2017 09:59:37,368 INFO  ~ Init recommender costs 15483 milliseconds
+13 五月 2017 09:59:37,765 INFO  ~ Load movie set costs 396 milliseconds
+13 五月 2017 09:59:37,800 INFO  ~ Load user set costs 35 milliseconds
+13 五月 2017 10:00:29,661 INFO  ~ Load rating set costs 51861 milliseconds
+13 五月 2017 10:27:56,947 ERROR ~ 
+
+@7429260ih
+Internal Server Error (500) for request GET /login
+
+Template not found (In /app/controllers/Application.java around line 34)
+The template Application/login.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Application/login.html
+	at play.mvc.Controller.renderTemplate(Controller.java:845)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at play.mvc.Controller.render(Controller.java:876)
+	at controllers.Application.login(Application.java:34)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)

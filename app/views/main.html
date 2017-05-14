@@ -11,10 +11,32 @@
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
     </head>
     <body>
+        <!-- NAVBAR
+        ================================================== -->
+        <div class="navbar-wrapper">
+            <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+            <div class="container">
+                <div class="navbar">
+                    <div class="home">
+                        <img src="@{'/public/images/logo.png'}">
+                        <a href="/">Homepage</a>
+                    </div>
+                    #{if flash.contains("message")}
+                    <div class="flashes">
+                        <a>${flash.get("message")}</a>
+                    </div>
+                    #{/if}
+                    <div class="menu">
+                        <a href="/login">Login</a>
+                        <a href="/logout">Logout</a>
+                    </div>
+                </div><!-- /.navbar -->
+            </div> <!-- /.container -->
+        </div><!-- /.navbar-wrapper -->
+        
         #{doLayout /}
         
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        <script src="@{'/public/javascripts/bootstrap.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}
     </body>
 </html>

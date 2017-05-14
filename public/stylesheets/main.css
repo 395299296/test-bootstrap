@@ -3,6 +3,7 @@ body {
 	font-size:13px;
 	color:#5a5a5a;
 	background:#f5f5fa
+
 }
 
 .navbar-wrapper {
@@ -10,12 +11,180 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    margin-top: 0px;
-    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    width: 100%;
+    height:52px;
+    background:#292827;
+
 }
 
-.top {
-    height:52px;
-    background:#292827
+.navbar {
+    margin-top: 13px;
+    height: 26px;
+}
+
+.home {
+	padding-left:30px;
+	float:left;
+    width:30%;
+
+}
+
+.home img {
+	width: 40px;
+	float: left;
+    margin-top: -12px;
+	margin-right: 7px;
+
+}
+
+.home a {
+	background:transparent;
+    padding-left: 10px;
+	line-height:25px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	display:block;
+	float:left;
+	color:#9d9d9d;
+	text-align:left;
+	font-size:16px;
+
+}
+
+.flashes {
+	padding-left:200px;
+	float:left
+    width:40%;
+
+}
+
+.flashes a {
+	background:transparent;
+	line-height:25px;
+	display:block;
+	float:left;
+	margin-left:13px;
+	color:#fff;
+	text-align:left;
+	font-size:14px;	
+
+}
+
+.menu {
+    float:right;
+    width:30%;
+
+}
+
+.menu a {
+    background:#fff;
+    width:70px;
+    line-height:25px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    float:right;
+    margin-right:13px;
+    color:#292827;
+    text-align:center
+}
+
+.banner {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+	width:100%;
+	margin:0 auto;
+	background:url(../images/bg.gif) repeat-x;
+	overflow:hidden
+}
+#box {
+    position:relative;
+    color:#fff;
+    height:350px;
+    max-width: 1280px;
+}
+
+/*滑图切换范围*/
+#box ul {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+#box li {
+	position:absolute;
+	border:2px solid #000;
+	list-style:none;
+	background:#000;
+	width:0;
+	height:0;
+	top:50%;
+	left:50%;
+	z-index:0;
+	cursor:pointer;
+	overflow:hidden;
+	border-radius:3px;
+}
+
+/*滑图图片*/
+#box li img {
+	width:100%;
+	height:100%;
+	vertical-align:center;
+}
+
+/*图片说明文字*/
+#box li div {
+	position:absolute;
+	bottom:-100%;
+	width:100%;
+	height:50%;
+	background:#000;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+#box li div h4 {
+	margin:0 10px;
+	font:12px/24px arial;
+	border-bottom:1px #333 solid;
+}
+#box li div h4 span {
+	color:red;
+	margin-left:10px;
+}
+#box li div p {
+	margin:5px 10px 0;
+	text-indent:2em;
+}
+
+/*左右切换控制键*/
+#box .prev, #box .next {
+	position:absolute;
+	top:50%;
+	width:39px;
+	height:80px;
+	margin-top:-40px;
+	overflow:hidden;
+	cursor:pointer;
+	background-color:rgba(200,200,200,0.5);
+	color:#999;
+	line-height:80px;
+	text-align:center;
+}
+#box .prev {
+	left:-60px;
+}
+#box .next {
+	right:-60px;
+	background-position:-39px 0;
+}
+#box .prev:hover {
+	color:white;
+	background-color:rgba(255,255,255,0.2);
+}
+#box .next:hover {
+	color:white;
+	background-color:rgba(255,255,255,0.2);
 }

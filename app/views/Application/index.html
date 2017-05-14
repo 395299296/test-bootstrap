@@ -1,11 +1,28 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<div class="navbar-wrapper">
-    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-    <div class="container">
-        <div class="top">
-            
-        </div>
-    </div>
-</div>
+<!-- Banner
+================================================== -->
+<div class="banner">
+	<div class="container">
+		<div id="box">
+		    <pre class="prev">&lt;&lt;</pre>
+		    <pre class="next">&gt;&gt;</pre>
+		    <ul>
+				#{set count:1/}
+		        #{list items:recommend_list, as:'movie'}
+				<li><img src="/public/upload/${movie.title}.jpg" />
+		            <div><h4>${movie.title}</span></h4>
+		                <p>${movie.summary}</p>
+		            </div>
+		        </li>
+				#{set count:count+1 /}
+		        #{/list}
+		    </ul>
+		</div>
+	</div>
+</div><!-- /.banner -->
+
+#{set 'moreScripts'}
+<script src="@{'/public/javascripts/banner.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+#{/set}
