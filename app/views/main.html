@@ -11,7 +11,7 @@
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
     </head>
     <body>
-        <!-- NAVBAR
+        <!-- navbar
         ================================================== -->
         <div class="navbar-wrapper">
             <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
@@ -34,7 +34,53 @@
             </div> <!-- /.container -->
         </div><!-- /.navbar-wrapper -->
         
-        #{doLayout /}
+        <div class="center">
+
+            #{doLayout /}
+
+            <!-- footer
+            ================================================== -->
+            <footer class="footer-wrapper">
+                <div class="container">
+                    <div class="footer">
+                        <div class="row-fluid">
+                            <div class="span2 ">
+                                <div class="title">Friendly link</div>
+                                <ul class="column1">
+                                    <li>
+                                        <a target="_blank" href="http://www.librec.net/" tppabs="http://www.librec.net/">LibRec</a>
+                                    </li>
+                                    <li>
+                                        <a target='_blank' href="https://www.playframework.com/" tppabs="https://www.playframework.com/">play framework</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://www.imdb.com/" tppabs="http://www.imdb.com/">IMDB - Movies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span6">
+                                <div class="title">On site</div>
+                                <div class="column2">This site is built upon the recommendation algorithms provided by the LibRec open-source project. More information can be referred to <a target="_blank" href="http://www.librec.net/" tppabs="http://www.librec.net/">LibRec official website</a></div>
+                            </div>
+                            <div class="span4">
+                                <div class="gw">
+                                    <a target="_blank" href="@{'public/images/mp.jpg'}">
+                                        <img src="@{'public/images/mp.jpg'}">
+                                    </a>
+                                    <p>WeChat</p>
+                                </div>
+                                <div class="gw">
+                                    <a target="_blank" href="http://weibo.com/guoguibing">
+                                        <img src="@{'public/images/weibo.png'}" tppabs="http://weibo.com/guoguibing" alt="">
+                                    </a>
+                                    <p>Weibo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- /.footer -->
+        </div><!-- /.center -->
         
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}

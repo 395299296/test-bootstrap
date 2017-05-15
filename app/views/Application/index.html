@@ -1,28 +1,124 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<!-- Banner
-================================================== -->
 <div class="banner">
 	<div class="container">
 		<div id="box">
-		    <pre class="prev">&lt;&lt;</pre>
-		    <pre class="next">&gt;&gt;</pre>
 		    <ul>
 				#{set count:1/}
 		        #{list items:recommend_list, as:'movie'}
-				<li><img src="/public/upload/${movie.title}.jpg" />
-		            <div><h4>${movie.title}</span></h4>
-		                <p>${movie.summary}</p>
-		            </div>
+				<li>
+                    <a title="" href="/movies/${movie.movie_id}">
+                        <img src="/public/upload/${movie.title}.jpg" title="${movie.title}" />
+                    </a>
 		        </li>
 				#{set count:count+1 /}
 		        #{/list}
 		    </ul>
+            <pre class="prev">&lt;&lt;</pre>
+            <pre class="next">&gt;&gt;</pre>
 		</div>
 	</div>
 </div><!-- /.banner -->
 
+<div class="container">
+    <div class="row-fluid">
+        <div class="span8">
+            <div class="left">
+                <ul id=nav>
+                    <li>
+                        <a>Recent release movies</a>
+                    </li>
+                </ul>
+                <div id=view_list> 
+                    <ul >
+                        #{list items:recent_list, as:'movie'}
+                        <li>
+                            <a title="" href="/movies/${movie.movie_id}">
+                                <img src="/public/upload/${movie.title}.jpg" alt="${movie.title}" />
+                                <div class="row-fluid">
+                                    <div class="span10 title">
+                                        <p>${movie.title}</p>
+                                    </div>
+                                    <div class="span2 score">
+                                        <i>${movie.avg_rating}</i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        #{/list}
+                    </ul>
+                </div>
+                <ul class="jiazai">
+                    <li>
+                        <a id="btn_more" href="javascript:;">View more >></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="span4">
+            <div class="right">
+                <div class="bang">
+                    <div class="hd">Score list Top10</div>
+                    <ul>
+                        #{list items:score_list, as:'movie'}
+                        <li>
+                            <div class="title">
+                                <a href="/movies/${movie.movie_id}" title="${movie.title}">${movie.title}</a>
+                            </div>
+                            <div class="score">
+                                <span><em>${movie.avg_rating}</em></span>
+                            </div>
+                        </li>
+                        #{/list}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 #{set 'moreScripts'}
 <script src="@{'/public/javascripts/banner.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var counter = 1;
+        var listAction = #{jsAction @Application.show_more_movies(':index')/}
+        $('#btn_more').click(function() {
+            $.get(listAction({index: counter}), function(data){
+                loadMoreMovies(data);
+                counter++;
+            });
+        });
+
+        function loadMoreMovies(obj) {
+            var result = '<ul>';
+            if (obj.length > 0) {
+                for (var i = 0; i < obj.length; i++) {
+                    var movie = obj[i];
+                    result += 
+                    '<li>' +
+                        '<a title="" href="/movies/' + movie.movie_id + '">' +
+                            '<img src="/public/upload/' + movie.title + '.jpg" alt="' + movie.title + '" />' +
+                            '<div class="row-fluid">' +
+                                '<div class="span10 title">' +
+                                    '<p>' + movie.title + '</p>' +
+                                '</div>' +
+                                '<div class="span2 score">' +
+                                    '<i>' + movie.avg_rating + '</i>' +
+                                '</div>' +
+                            '</div>' +
+                        '</a>' +
+                    '</li>'
+                }
+                result += '</ul>'
+                $('#view_list').append(result);
+                var y = window.scrollY;
+                scroll(y, y + 400);
+            } else {
+                $('#btn_more').hide();
+            }
+        }
+    })
+</script>
 #{/set}
